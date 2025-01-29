@@ -5,7 +5,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://ghostguy24.github.io/frontend_fastapi_html_render/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -13,4 +13,4 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}   
+    return {"message": "Hello World"}   
