@@ -5,7 +5,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://ghostguy24.github.io/frontend_fastapi_html_render/"],
+    allow_origins=["https://ghostguy24.github.io/*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
